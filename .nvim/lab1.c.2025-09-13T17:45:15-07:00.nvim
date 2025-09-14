@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define _POSIX_C_SOURCE 200809L
+
+int main(void) {
+  char *line = NULL;
+  size_t len = 0;
+
+  printf("Please enter some text: ");
+  getline(&line, &len, stdin);
+
+  return 0;
+}

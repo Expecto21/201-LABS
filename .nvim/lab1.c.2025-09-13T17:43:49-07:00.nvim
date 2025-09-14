@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+  char *line = NULL;
+  size_t len = 0;
+
+  printf("Please enter some text: ");
+  getline(&line, &len, stdin);
+
+  return 0;
+}
